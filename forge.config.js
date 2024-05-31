@@ -8,15 +8,16 @@ module.exports = {
   outDir: './release',
   rebuildConfig: {},
   makers: [
-    {
-      name: '@electron-forge/maker-squirrel',
-      "config": {
-        "name": "electron_angular"
-      }
-    },
+    //   Error when we launch it on windows need to investigate
+    // {
+    //   name: '@electron-forge/maker-squirrel',
+    //   "config": {
+    //     "name": "electron_angular"
+    //   }
+    // },
     {
       name: '@electron-forge/maker-zip',
-      platforms: ['darwin'],
+      platforms: ['darwin', 'win32'],
     },
     {
       name: '@electron-forge/maker-deb',
