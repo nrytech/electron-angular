@@ -41,4 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/out
+# electron-forge custom release directory
+/release
